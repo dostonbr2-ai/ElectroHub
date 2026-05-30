@@ -52,6 +52,7 @@
   align-items: center;
   gap: 6px;
   background-color: #e7f0fe;
+  color: #0846AA;
 }
 
 .hero {
@@ -189,9 +190,6 @@
    position: relative;
 }
 
-.card:hover{
-  transform: scale(1.25);
-}
 
 .card-content{
      padding: 24px;
@@ -265,12 +263,53 @@
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
   padding: 32.8px  0px 0px 32.8px;
   border-radius: 20px;
+  transition: 0.3s;
 }
 
-.about-card img{
+
+.about-card:hover h3,
+.about-card:hover .blue-text {
+  color: #FFF;
+}
+.about-card:hover .about-icon img {
+  filter: brightness(0) invert(1);
+}
+.about-card:hover{
+  transform: scale(1.05);
+  color: #FFF;
+  background-color: #0B64F4;
+}
+
+
+.about-card:hover .about-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.about-icon:hover{
+  background-color: #000000;
+}
+
+.about-icon{
   width: 56px;
   height: 56px;
+  background-color: rgba(11, 100, 244, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.about-icon img {
+    width: 28px;   
+    height: 28px;
+    object-fit: contain;
+}
+
+.blue-text{
+   color: #0B64F4;
+}
+
 
 
 .abt-text{
@@ -281,9 +320,6 @@
 }
 
 
-.abt-text p{
-  color: #0B64F4;
-}
 
 .abt-text h2{
   color: #1B2232;
@@ -324,7 +360,13 @@
   max-height: 514px;
   border: 1px solid #EAEFF8;
   border-radius: 16px;
+  transition: 0.3s;
   padding: 16px;
+}
+
+
+.best-card:hover{
+  transform: scale(1.05);
 }
 
 
@@ -557,14 +599,18 @@
 .offer-btn{
   margin-top: 34.8px;
   background-color: #0B64F4;
-  color: #FFFFFF;
+ color: #FFFFFF;
   border-radius: 16px;
   padding: 11.6px 32px  12.4px 32px;
   display: flex;
   justify-content: center;
-  color: #000;
   align-items: center;
   border: none;
+  transition: 0.3s;
+}
+
+.offer-btn:hover{
+  transform: scale(1.05);
 }
 
 
